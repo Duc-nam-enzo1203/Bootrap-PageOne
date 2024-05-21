@@ -43,7 +43,6 @@ window.addEventListener("mousemove", function (e) {
 function animateCircles() {
   let x = coords.x;
   let y = coords.y;
-  console.log(x, y);
 
   circles.forEach(function (circle, index) {
     circle.style.left = x + "px";

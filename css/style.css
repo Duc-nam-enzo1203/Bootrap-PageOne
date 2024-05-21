@@ -139,7 +139,6 @@ header > div img {
 .overlay-menu ul li a::before {
   content: "";
   position: absolute;
-  /* background: var(--color-btn); */
   transition: all 0.5s ease-in-out;
   width: 60%;
   height: 4px;
@@ -674,6 +673,7 @@ header > div img {
 
 .title h2 {
   text-align: center;
+  font-size: 28px;
   width: fit-content;
   margin: 0 auto;
   position: relative;
@@ -692,6 +692,18 @@ header > div img {
   background-color: var(--color-btn);
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .title h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 20px;
+  }
 }
 
 .sliders-show-product {
