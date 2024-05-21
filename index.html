@@ -13,11 +13,24 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
     <!-- Menu  -->
     <header id="header">
       <div class="container-lg row">
         <div class="logo col-4">
-          <img src="./img/logo.png" alt="logo" />
+          <a href=""><img src="./img/logo.png" alt="logo" /></a>
         </div>
         <div class="menu-wrap col-8">
           <input type="checkbox" class="toggler" />
@@ -28,7 +41,7 @@
             <div class="overlay-menu">
               <ul>
                 <li><a href="">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#gioithieu">Giới thiệu</a></li>
                 <li><a href="#sanpham">Sản phẩm</a></li>
                 <li><a href="#tintuc">Tin tức</a></li>
                 <li><a href="#doitac">Đối tác</a></li>
@@ -106,80 +119,92 @@
         </div>
         <div class="sliders-show-product">
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-1.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-1.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Giường Châu Âu</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-2.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Bàn làm việc</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-3.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-3.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Tủ quần áo</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-4.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-4.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Kệ để đồ</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-2.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Giường Châu Âu</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
-            <img
-              src="./img/san-pham-noi-bat/sp-1.jpg"
-              alt=""
-              draggable="false"
-            />
+            <div>
+              <img
+                src="./img/san-pham-noi-bat/sp-1.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
             <h6>Giường Châu Âu</h6>
             <rating></rating>
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
         </div>
-        <div class="prew-pagination">
-          <div class="pag-left">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-          </div>
-          <div class="pag-right">
-            <i id="right" class="fa-solid fa-angle-right"></i>
-          </div>
+        <!-- <div class="prew-pagination"> -->
+        <div class="pag-left">
+          <i id="left" class="fa-solid fa-angle-left"></i>
         </div>
+        <div class="pag-right">
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -214,22 +239,22 @@
                 <img
                   src="./img/ve-chung-toi/ve-chung-toi-1.jpg"
                   alt=""
-                  class="col-3"
+                  class="col-3 img-lightbox"
                 />
                 <img
                   src="./img/ve-chung-toi/ve-chung-toi-2.jpg"
                   alt=""
-                  class="col-3"
+                  class="col-3 img-lightbox"
                 />
                 <img
                   src="./img/ve-chung-toi/ve-chung-toi-3.jpg"
                   alt=""
-                  class="col-3"
+                  class="col-3 img-lightbox"
                 />
                 <img
                   src="./img/ve-chung-toi/ve-chung-toi-4.jpg"
                   alt=""
-                  class="col-3"
+                  class="col-3 img-lightbox"
                 />
               </div>
             </div>
@@ -393,13 +418,13 @@
                   type="text"
                   placeholder="Email/Phone *"
                   name="Email/Phone"
-                  class="Email-phone invalid"
+                  class="Email-phone"
                   id="email"
                 />
-                <span class="form-message"></span>
+                <p class="error" id="invalid_email"></p>
               </div>
               <div class="submit col-3">
-                <input type="submit" value="Gửi" />
+                <input type="submit" value="Gửi" id="submit" />
               </div>
             </form>
           </div>
@@ -416,11 +441,11 @@
           <ul>
             <li>
               <i class="fa-solid fa-phone"></i>
-              <a href="#" id="#phone">0999.999.999</a>
+              <a href="tel:0866634302" id="#phone">0999.999.999</a>
             </li>
             <li>
               <i class="fa-regular fa-envelope"></i>
-              <a href="#">cskh@hoanghoan.vn</a>
+              <a href="mailto:namdoan.ka@gmail.com">cskh@hoanghoan.vn</a>
             </li>
             <li>
               <i class="fa-solid fa-location-dot"></i>
@@ -431,11 +456,11 @@
         <div class="col-3">
           <h2>Về chúng tôi</h2>
           <ul>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Sản phẩm</a></li>
-            <li><a href="#">Tin tức</a></li>
-            <li><a href="#">Đối tác</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#gioithieu">Giới thiệu</a></li>
+            <li><a href="#sanpham">Sản phẩm</a></li>
+            <li><a href="#tintuc">Tin tức</a></li>
+            <li><a href="#doitac">Đối tác</a></li>
+            <li><a href="#lienhe">Liên hệ</a></li>
           </ul>
         </div>
         <div class="col-4">
@@ -449,22 +474,25 @@
       </div>
     </footer>
 
-    <!-- <div class="lightbox">
-      <div class="lightbox-content">
-        <img src="./img/banner.png" alt="" class="lightbox-image" />
-      </div>
-    </div> -->
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
 
     <!-- Nhúng jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/Menu.js"></script>
+    <script src="./js/lightbox.js"></script>
     <script src="./js/SlidersProduct.js"></script>
     <script src="./js/validator.js"></script>
-    <script>
-      Validator({
-        form: "#form",
-        rules: [Validator.isRequired("#fullName"), Validator.isEmail("#email")],
-      });
-    </script>
+    <script src="./js/cursorMouse.js"></script>
   </body>
 </html>

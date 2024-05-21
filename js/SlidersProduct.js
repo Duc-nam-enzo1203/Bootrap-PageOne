@@ -28,7 +28,7 @@ document.addEventListener("mouseup", dragStop);
 
 // btn pagination
 
-const arrowBtns = document.querySelectorAll(".prew-pagination div i");
+const arrowBtns = document.querySelectorAll(".container-lg div i");
 const firstCardWidth = carousel.querySelector(".box-item").offsetWidth;
 
 arrowBtns.forEach((btn) => {

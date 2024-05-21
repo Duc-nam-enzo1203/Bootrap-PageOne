@@ -44,7 +44,7 @@ p {
     display: none;
   }
   .Block {
-    padding: 100px 50px;
+    padding: 120px 50px 60px 50px;
   }
   header > .container-lg {
     padding: 16px 0px;
@@ -78,7 +78,7 @@ p {
     display: none;
   }
   .Block {
-    padding: 30px 15px;
+    padding: 30px 15px !important;
   }
   header > .container-lg {
     padding: 12px 15px;
@@ -95,10 +95,12 @@ header {
   left: 0;
   background-color: #fff;
   z-index: 4;
+  height: 100px;
 }
 
 header > div img {
-  width: 90px;
+  height: 68px;
+  cursor: pointer;
 }
 
 .menu-wrap {
@@ -660,7 +662,6 @@ header > div img {
   background-color: var(--color-bg);
   position: relative;
   height: fit-content;
-  padding: 50px;
 }
 
 .container_2 > div {
@@ -747,16 +748,36 @@ header > div img {
   cursor: pointer;
 }
 
+.box-item div {
+  overflow: hidden;
+}
+
 .box-item img {
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.box-item img:hover {
+  transform: scale(1.1);
 }
 
 .pag-left,
 .pag-right {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.prew-pagination i {
+.pag-left {
+  left: 0;
+}
+
+.pag-right {
+  right: 0;
+}
+
+.pag-right i,
+.pag-left i {
   width: 50px;
   height: 50px;
   padding: 8px;
@@ -768,13 +789,10 @@ header > div img {
   transition: all 0.5s ease;
 }
 
-.prew-pagination i:active {
-  background-color: #b4b4b4;
-  transform: scale(1.1);
-  color: #000;
-}
-
-.prew-pagination i:hover {
+.pag-left i:active,
+.pag-left i:hover,
+.pag-right i:active,
+.pag-right i:hover {
   background-color: #b4b4b4;
   transform: scale(1.1);
   color: #000;
@@ -786,17 +804,6 @@ header > div img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.prew-pagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
 }
 
 .box-item h6,
@@ -855,8 +862,19 @@ header > div img {
   color: #fff;
 }
 
+.container-about > div:last-child > div:first-child {
+  overflow: hidden;
+  padding: 0 !important;
+}
+
 .container-about > div:last-child > div:first-child img {
   width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-about > div:last-child > div:first-child img:hover {
+  transform: scale(1.1);
 }
 
 .container-about > div:last-child > div:last-child h3 {
@@ -877,6 +895,10 @@ header > div img {
   font-weight: 400;
   text-align: justify;
   line-height: 1.4em;
+}
+
+.img-lightbox {
+  cursor: zoom-in;
 }
 
 .container-about > div:last-child > div:last-child {
@@ -1306,6 +1328,7 @@ header > div img {
 
 form {
   margin: 0 !important;
+  position: relative;
 }
 
 .box-form h4 {
@@ -1318,8 +1341,18 @@ form {
   padding: 3px;
 }
 
-.form-group .invalid {
+/* .form-group .invalid {
   border: 1px solid red;
+} */
+
+#invalid_email {
+  font-size: 16px;
+  font-family: "Gotham";
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -20px;
 }
 
 :focus-visible {
@@ -1555,6 +1588,7 @@ footer div div ul li a {
 
 .social i {
   color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -1633,14 +1667,68 @@ footer div div ul li a {
   align-items: center;
 }
 
+.box-left,
+.box-right {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  z-index: 1;
+}
+
+.box-left {
+  left: -12%;
+}
+
+.box-right {
+  right: -12%;
+}
+
+.box-left:hover,
+.box-right:hover {
+  background-color: var(--color-btn);
+}
+
+.box-right:hover ~ #right,
+.box-left:hover ~ #left {
+  color: #ffffff;
+}
+
+#right,
+#left {
+  font-size: 100%;
+}
+
 .lightbox-content {
-  max-width: 1000px;
+  width: 25%;
   margin: 0 auto;
+  position: relative;
 }
 
 .lightbox-content img {
-  /* max-width: 100vw; */
   width: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox-content {
+    width: 75%;
+  }
+}
+
+.cursor {
+  position: absolute;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-btn);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
