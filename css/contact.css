@@ -1,4 +1,4 @@
-.Banner_info {
+.Banner_contact {
   background-image: url("/img/banner.png");
   background-position: cover;
   width: 100%;
@@ -13,11 +13,11 @@
   padding: 100px 50px !important;
 }
 
-.Banner_info > div {
+.Banner_contact > div {
   padding: 0;
 }
 
-.Banner_info > div > div:first-child {
+.Banner_contact > div > div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,11 +26,11 @@
   gap: 16px;
 }
 
-.Banner_info > div > div > img {
+.Banner_contact > div > div > img {
   width: 150px;
 }
 
-.Banner_info > div > div h1 {
+.Banner_contact > div > div h1 {
   font-size: 48px;
   text-transform: uppercase;
   color: #fff;
@@ -40,25 +40,26 @@
 
 .container-contact {
   background-color: #fff;
-  padding: 50px;
+  padding: 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container-contact > div {
-  width: 48%;
+  width: 46%;
 }
 
 .container-contact div img {
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
 }
 
 .container-contact > div:last-child {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 32px;
 }
 
 h3 {
@@ -97,4 +98,66 @@ input {
   padding: 16px;
   background-color: #bd945f;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-contact {
+    padding: 25px;
+  }
+
+  .container-contact > div {
+    width: 48%;
+  }
+
+  #submit {
+    width: 40%;
+  }
+
+  .container-contact div img {
+    height: 420px;
+  }
+
+  .Banner_contact > div > div h1 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+  input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-contact {
+    padding: 15px;
+    gap: 12px;
+  }
+  .container-contact > div {
+    width: 100%;
+  }
+  .container-contact div img {
+    height: 250px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  #submit {
+    width: 40%;
+  }
+  input {
+    font-size: 14px;
+  }
+  .container-contact > div:last-child {
+    gap: 24px;
+  }
+  .Banner_contact > div > div h1 {
+    font-size: 28px;
+  }
+
+  .Banner_contact > div > div > img {
+    width: 100px;
+  }
 }

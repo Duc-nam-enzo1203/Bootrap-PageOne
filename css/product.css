@@ -1,0 +1,117 @@
+.banner_product {
+  width: 100%;
+  height: 60vh;
+  margin-top: 100px;
+}
+
+#carouselExampleIndicators {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item > img {
+  object-fit: cover center bottom;
+}
+
+#product-container {
+  background-color: #d8d8d8d8;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#product-container > div {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.box-product {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.box-product h2 {
+  margin: 0 !important;
+  font-weight: 700;
+}
+
+.box-product h2::before {
+  left: 0 !important;
+  transform: none !important;
+}
+
+.seemore {
+  font-family: "Gotham";
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  background-color: #ffffff00;
+}
+
+.container-item-product {
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container-item-product .box-item {
+  width: 24%;
+}
+
+.box-item img {
+  width: 100%;
+}
+
+.container-item-product .box-item p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container-item-product .box-item h6 {
+  color: #2c2e53;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner_product {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner_product {
+    height: 40vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #product-container > div {
+    padding: 30px 15px;
+  }
+
+  .container-item-product {
+    gap: 8px;
+  }
+
+  .container-item-product .box-item {
+    width: 48%;
+  }
+
+  footer > .container-lg > div {
+    width: 100% !important;
+  }
+}

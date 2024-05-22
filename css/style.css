@@ -1664,7 +1664,8 @@ footer div div ul li a {
     margin-top: 0 !important;
   }
   footer > .container-lg > div {
-    width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
     gap: 4px;
   }
 
