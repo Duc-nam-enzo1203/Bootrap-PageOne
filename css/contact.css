@@ -77,16 +77,25 @@ h3 {
 
 .contact-form div {
   width: 100%;
-  border: 2px solid #bd945f;
-  padding: 12px;
 }
 
 input {
-  border: none;
+  width: 100%;
+  border: 2px solid #bd945f;
+  padding: 12px;
   font-size: 16px;
   width: 100%;
   font-family: "Gotham";
   font-weight: 400;
+}
+
+.error {
+  left: 0;
+  bottom: -10px;
+  font-size: 14px;
+  font-family: "Gotham";
+  font-weight: 400;
+  color: red;
 }
 
 [data-lastpass-icon-root] {
