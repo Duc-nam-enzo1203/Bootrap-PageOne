@@ -171,6 +171,10 @@
     width: 100%;
   }
 
+  .container-establish > .col-6:last-child {
+    height: fit-content;
+  }
+
   .container-establish > .col-6 > img {
     width: 100%;
   }
