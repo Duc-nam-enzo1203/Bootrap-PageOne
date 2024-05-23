@@ -1,20 +1,3 @@
-// let section = document.querySelectorAll("section");
-
-// window.onscroll = () => {
-//   section.forEach((sec) => {
-//     let top = window.scrollY;
-//     let offset = sec.offsetTop - 150;
-//     let height = sec.offsetHeight;
-//     console.log(top, offset, height);
-
-//     if (top >= offset) {
-//       sec.classList.add("show-animation");
-//     } else {
-//       sec.classList.remove("show-animation");
-//     }
-//   });
-// };
-
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const h1 = document.querySelectorAll("h1");

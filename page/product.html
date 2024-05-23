@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="/css/cssBootrap/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/font.css" />
     <link rel="stylesheet" href="/css/product.css" />
@@ -45,12 +46,12 @@
           <div class="menu">
             <div class="overlay-menu">
               <ul>
-                <li><a href="/index.html">Trang chủ</a></li>
-                <li><a href="/page/information.html">Giới thiệu</a></li>
-                <li><a href="/page/product.html">Sản phẩm</a></li>
-                <li><a href="news.html">Tin tức</a></li>
-                <li><a href="/page/partner.html">Đối tác</a></li>
-                <li><a href="/page/contact.html">Liên hệ</a></li>
+                <li ><a href="/index.html">Trang chủ</a></li>
+                <li ><a href="/page/information.html">Giới thiệu</a></li>
+                <li ><a href="/page/product.html">Sản phẩm</a></li>
+                <li ><a href="news.html">Tin tức</a></li>
+                <li ><a href="/page/partner.html">Đối tác</a></li>
+                <li ><a href="/page/contact.html">Liên hệ</a></li>
               </ul>
             </div>
           </div>
@@ -68,44 +69,56 @@
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
-            aria-label="Slide 1"
+            aria-label="Slide 1" data-aos="fade-up"
+            data-aos-duration="1000"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="1"
-            aria-label="Slide 2"
+            aria-label="Slide 2" data-aos="fade-up"
+            data-aos-duration="1000"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="2"
-            aria-label="Slide 3"
+            aria-label="Slide 3" data-aos="fade-up"
+            data-aos-duration="1000"
           ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="/img/banner.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption-content">
-              <h5>Trải nghiệm</h5>
-              <p>Không gian hiện đại</p>
-              <button class="carousel-btn">mua ngay</button>
+              <h5 data-aos="fade-up"
+              data-aos-duration="1000">Trải nghiệm</h5>
+              <p data-aos="fade-up"
+              data-aos-duration="1000">Không gian hiện đại</p>
+              <button class="carousel-btn" data-aos="fade-up"
+              data-aos-duration="1000">mua ngay</button>
             </div>
           </div>
           <div class="carousel-item">
             <img src="/img/banner.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption-content">
-              <h5>Trải nghiệm</h5>
-              <p>Không gian hiện đại</p>
-              <button class="carousel-btn">mua ngay</button>
+              <h5 data-aos="fade-up"
+              data-aos-duration="1000">Trải nghiệm</h5>
+              <p data-aos="fade-up"
+              data-aos-duration="1000">Không gian hiện đại</p>
+              <button class="carousel-btn" data-aos="fade-up"
+              data-aos-duration="1000">mua ngay</button>
             </div>
           </div>
           <div class="carousel-item">
             <img src="/img/banner.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption-content">
-              <h5>Trải nghiệm</h5>
-              <p>Không gian hiện đại</p>
-              <button class="carousel-btn">mua ngay</button>
+              <h5 data-aos="fade-up"
+              data-aos-duration="1000">Trải nghiệm</h5>
+              <p data-aos="fade-up"
+              data-aos-duration="1000">Không gian hiện đại</p>
+              <button class="carousel-btn" data-aos="fade-up"
+              data-aos-duration="1000">mua ngay</button>
             </div>
           </div>
           </div>
@@ -115,7 +128,8 @@
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
+          data-bs-slide="prev" data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -124,7 +138,8 @@
           class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
+          data-bs-slide="next" data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -136,8 +151,10 @@
     <section id="product-container" class="Block">
       <div class="container-lg">
         <div class="title box-product">
-          <h2>Phòng khách</h2>
-          <button class="seemore">Xem tất cả</button>
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Phòng khách</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
         </div>
         <div class="container-item-product">
           <div class="box-item">
@@ -145,15 +162,237 @@
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
                 alt=""
-                draggable="false"
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
               />
             </div>
-            <h6>Bàn làm việc</h6>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
             <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
           </div>
           <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <div class="title box-product">
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Phòng khách</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
+        </div>
+        <div class="container-item-product">
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <div class="title box-product">
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Phòng ngủ</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
+        </div>
+        <div class="container-item-product">
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+            <h6 data-aos="fade-up"
+            data-aos-duration="1000">Bàn làm việc</h6>
+            <rating></rating>
+            <p data-aos="fade-up"
+            data-aos-duration="1000">(Size lớn, trắng sữa)</p>
+            <price data-aos="fade-up"
+            data-aos-duration="1000">8.999.000 VNĐ</price>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <div class="title box-product">
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Phòng bếp</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
+        </div>
+        <div class="container-item-product">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -166,7 +405,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -179,7 +419,88 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
+            <h6>Bàn làm việc</h6>
+            <rating></rating>
+            <p>(Size lớn, trắng sữa)</p>
+            <price>8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false" 
+              />
+            </div>
+            <h6>Bàn làm việc</h6>
+            <rating></rating>
+            <p>(Size lớn, trắng sữa)</p>
+            <price>8.999.000 VNĐ</price>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <div class="title box-product">
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Phòng tắm</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
+        </div>
+        <div class="container-item-product">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
+            <h6>Bàn làm việc</h6>
+            <rating></rating>
+            <p>(Size lớn, trắng sữa)</p>
+            <price>8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
+            <h6>Bàn làm việc</h6>
+            <rating></rating>
+            <p>(Size lớn, trắng sữa)</p>
+            <price>8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div>
+              <img
+                src="/img/san-pham-noi-bat/sp-2.jpg"
+                alt=""
+                draggable="false"
+              />
+            </div>
+            <h6>Bàn làm việc</h6>
+            <rating></rating>
+            <p>(Size lớn, trắng sữa)</p>
+            <price>8.999.000 VNĐ</price>
+          </div>
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -196,11 +517,14 @@
       </div>
       <div class="container-lg">
         <div class="title box-product">
-          <h2>Phòng khách</h2>
-          <button class="seemore">Xem tất cả</button>
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Trẻ em</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
         </div>
         <div class="container-item-product">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -213,7 +537,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -226,7 +551,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -239,7 +565,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -256,11 +583,14 @@
       </div>
       <div class="container-lg">
         <div class="title box-product">
-          <h2>Phòng ngủ</h2>
-          <button class="seemore">Xem tất cả</button>
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Văn phòng</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
         </div>
         <div class="container-item-product">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -273,7 +603,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -286,7 +617,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -299,7 +631,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -316,11 +649,14 @@
       </div>
       <div class="container-lg">
         <div class="title box-product">
-          <h2>Phòng bếp</h2>
-          <button class="seemore">Xem tất cả</button>
+          <h2 data-aos="fade-up"
+          data-aos-duration="1000">Cầu thang</h2>
+          <button class="seemore" data-aos="fade-up"
+          data-aos-duration="1000">Xem tất cả</button>
         </div>
         <div class="container-item-product">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -333,7 +669,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -346,7 +683,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -359,247 +697,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-        </div>
-      </div>
-      <div class="container-lg">
-        <div class="title box-product">
-          <h2>Phòng tắm</h2>
-          <button class="seemore">Xem tất cả</button>
-        </div>
-        <div class="container-item-product">
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-        </div>
-      </div>
-      <div class="container-lg">
-        <div class="title box-product">
-          <h2>Trẻ em</h2>
-          <button class="seemore">Xem tất cả</button>
-        </div>
-        <div class="container-item-product">
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-        </div>
-      </div>
-      <div class="container-lg">
-        <div class="title box-product">
-          <h2>Văn phòng</h2>
-          <button class="seemore">Xem tất cả</button>
-        </div>
-        <div class="container-item-product">
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-        </div>
-      </div>
-      <div class="container-lg">
-        <div class="title box-product">
-          <h2>Cầu thang</h2>
-          <button class="seemore">Xem tất cả</button>
-        </div>
-        <div class="container-item-product">
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
-            <div>
-              <img
-                src="/img/san-pham-noi-bat/sp-2.jpg"
-                alt=""
-                draggable="false"
-              />
-            </div>
-            <h6>Bàn làm việc</h6>
-            <rating></rating>
-            <p>(Size lớn, trắng sữa)</p>
-            <price>8.999.000 VNĐ</price>
-          </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -620,7 +719,8 @@
           <button class="seemore">Xem tất cả</button>
         </div>
         <div class="container-item-product">
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -633,7 +733,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -646,7 +747,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -659,7 +761,8 @@
             <p>(Size lớn, trắng sữa)</p>
             <price>8.999.000 VNĐ</price>
           </div>
-          <div class="box-item">
+          <div class="box-item" data-aos="fade-up"
+          data-aos-duration="1000">
             <div>
               <img
                 src="/img/san-pham-noi-bat/sp-2.jpg"
@@ -678,41 +781,67 @@
 
     <!-- Footer block  -->
     <footer>
-      <div class="container-lg row">
+      <div class="container-lg row animate">
         <div class="col-5">
-          <h2>Thông tin chung</h2>
-          <h4>Công ty TNHH Hoàng Hoan</h4>
+          <h2 data-aos="fade-up" data-aos-duration="1000">Thông tin chung</h2>
+          <h4 data-aos="fade-up" data-aos-duration="1000">
+            Công ty TNHH Hoàng Hoan
+          </h4>
           <ul>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1000">
               <i class="fa-solid fa-phone"></i>
               <a href="tel:0866634302" id="#phone">0999.999.999</a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1000">
               <i class="fa-regular fa-envelope"></i>
               <a href="mailto:namdoan.ka@gmail.com">cskh@hoanghoan.vn</a>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1000">
               <i class="fa-solid fa-location-dot"></i>
               <a href="#">Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội</a>
             </li>
           </ul>
         </div>
         <div class="col-3">
-          <h2>Về chúng tôi</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">Về chúng tôi</h2>
           <ul>
-            <li><a href="#gioithieu">Giới thiệu</a></li>
-            <li><a href="#sanpham">Sản phẩm</a></li>
-            <li><a href="#tintuc">Tin tức</a></li>
-            <li><a href="#doitac">Đối tác</a></li>
-            <li><a href="#lienhe">Liên hệ</a></li>
+            <li data-aos="fade-up" data-aos-duration="1000">
+              <a href="/page/information.html">Giới thiệu</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1000">
+              <a href="/page/product.html">Sản phẩm</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1000">
+              <a href="/page/news.html">Tin tức</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1000">
+              <a href="/page/partner.html">Đối tác</a>
+            </li>
+            <li data-aos="fade-up" data-aos-duration="1000">
+              <a href="/page/contact.html">Liên hệ</a>
+            </li>
           </ul>
         </div>
         <div class="col-4">
-          <h2>Kết nối với chúng tôi</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">
+            Kết nối với chúng tôi
+          </h2>
           <div class="social">
-            <i class="fa-brands fa-square-facebook fa-2x"></i>
-            <i class="fa-brands fa-square-instagram fa-2x"></i>
-            <i class="fa-regular fa-envelope fa-2x"></i>
+            <i
+              class="fa-brands fa-square-facebook fa-2x"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></i>
+            <i
+              class="fa-brands fa-square-instagram fa-2x"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></i>
+            <i
+              class="fa-regular fa-envelope fa-2x"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></i>
           </div>
         </div>
       </div>
@@ -722,6 +851,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/cursorMouse.js"></script>
     <script src="/js/slider-banner-product.js"></script>
-    <script src="../js/animateshow.js"></script>
+    <!-- <script src="../js/animateshow.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

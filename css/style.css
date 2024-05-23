@@ -1762,7 +1762,7 @@ footer div div ul li a {
 
 /* animation  */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -1789,4 +1789,4 @@ input.show-animation,
 button.show-animation {
   transform: translateY(0);
   transition: all 1s ease-in-out;
-}
+} */
