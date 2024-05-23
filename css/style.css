@@ -1759,3 +1759,34 @@ footer div div ul li a {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+/* animation  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+button,
+input {
+  transform: translateY(100px);
+}
+
+h1.show-animation,
+h2.show-animation,
+h3.show-animation,
+h4.show-animation,
+h5.show-animation,
+h6.show-animation,
+p.show-animation,
+a.show-animation,
+img.show-animation,
+input.show-animation,
+button.show-animation {
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}

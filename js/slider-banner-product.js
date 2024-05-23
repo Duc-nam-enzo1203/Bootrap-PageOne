@@ -3,21 +3,28 @@
 //     $(".carousel-control-prev").click(function () {});
 // });
 
-var carousel = document.querySelector(".carousel-inner");
-var items = document.querySelectorAll(".carousel-item");
-var dots = document.querySelectorAll(".carousel-indicators button");
-var prev = document.querySelector(".carousel-control-prev");
-var next = document.querySelector(".carousel-control-next");
+let list = document.querySelector(".carousel-inner");
+let items = document.querySelectorAll(".carousel-item");
+let dots = document.querySelectorAll(".carousel-indicators button");
+let prev = document.querySelector(".carousel-control-prev");
+let next = document.querySelector(".carousel-control-next");
 
-let active = 0;
+let lengthItems = items.length;
 
-next.onclick = function () {
-  active += 1;
-  reloadslider();
-};
+$(".carousel-inner .carousel-item").each(function () {
+  var minPerSlide = lengthItems;
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(":first");
+  }
+  next.children(":first-child").clone().appendTo($(this));
 
-function reloadslider() {
-  let checkLeft = items[active].offsetLeft;
-  console.log(checkLeft);
-  items.style.left = -checkLeft + "px";
-}
+  for (var i = 0; i < minPerSlide; i++) {
+    next = next.next();
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
+
+    next.children(":first-child").clone().appendTo($(this));
+  }
+});

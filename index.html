@@ -54,8 +54,8 @@
     </header>
 
     <!-- Block 1 - banner -->
-    <section id="gioithieu" class="Block container_1">
-      <div class="container-lg">
+    <section id="container" class="Block container_1">
+      <div class="container-lg animate">
         <div>
           <h1>
             Thế giới nội thất số 1 Việt Nam<br class="br-desktop" />
@@ -67,7 +67,9 @@
             maiores quas distinctio soluta, molestiae veritatis tempore impedit
             consectetur voluptatum animi necessitatibus ut?
           </p>
-          <button class="btn-contact"><span>Liên hệ ngay</span></button>
+          <a href="/page/contact.html"
+            ><button class="btn-contact"><span>Liên hệ ngay</span></button></a
+          >
         </div>
         <div class="container-categories-product container-md">
           <div class="container-categories">
@@ -112,8 +114,8 @@
     </section>
 
     <!-- Block 2 - banner -->
-    <section id="sanpham" class="Block container_2">
-      <div class="container-lg">
+    <section id="container" class="Block container_2">
+      <div class="container-lg animate">
         <div class="title">
           <h2>Sản phẩm nổi bật</h2>
         </div>
@@ -211,7 +213,7 @@
     <!-- Block 3 - banner -->
     <section id="container" class="Block container_3">
       <div id="overlay"></div>
-      <div class="container-lg">
+      <div class="container-lg animate">
         <div class="container-about">
           <div class="title">
             <h2>Về chúng tôi</h2>
@@ -303,8 +305,8 @@
     </section>
 
     <!-- Block 4 - banner -->
-    <section id="tintuc" class="Block container_4">
-      <div class="container-lg">
+    <section id="container" class="Block container_4">
+      <div class="container-lg animate">
         <div class="title">
           <h2>Tin tức</h2>
         </div>
@@ -359,17 +361,21 @@
                 </p>
               </div>
             </div>
-            <button class="btn-preview">
-              <span>Xem thêm<i class="fa-solid fa-arrow-right-long"></i></span>
-            </button>
+            <a href="/page/news.html" style="text-decoration: none">
+              <button class="btn-preview">
+                <span
+                  >Xem thêm<i class="fa-solid fa-arrow-right-long"></i
+                ></span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Block 5 - banner -->
-    <section id="doitac" class="Block container_5">
-      <div class="container-lg">
+    <section id="container" class="Block container_5">
+      <div class="container-lg animate">
         <div class="title">
           <h2>Đối tác</h2>
         </div>
@@ -400,9 +406,9 @@
     </section>
 
     <!-- Block 6  -->
-    <section id="lienhe" class="Block container_6">
+    <section id="container" class="Block container_6">
       <img src="./img/lienhe-1-removebg-preview.png" alt="ghe" />
-      <div class="container-lg row">
+      <div class="container-lg row animate">
         <div class="col-2"></div>
         <div class="col-5 title-contact">
           <h4>Trải nghiệm dịch vụ</h4>
@@ -434,7 +440,7 @@
 
     <!-- Footer block  -->
     <footer>
-      <div class="container-lg row">
+      <div class="container-lg row animate">
         <div class="col-5">
           <h2>Thông tin chung</h2>
           <h4>Công ty TNHH Hoàng Hoan</h4>
@@ -480,5 +486,6 @@
     <script src="./js/SlidersProduct.js"></script>
     <script src="./js/validator.js"></script>
     <script src="./js/cursorMouse.js"></script>
+    <script src="/js/animateshow.js"></script>
   </body>
 </html>
